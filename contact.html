@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Muhamad Asyraaf about industrial automation, electronics, and project opportunities.">
+  <title>Contact | Muhamad Asyraaf</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="Muhamad Asyraaf home"><img src="images/MA.PNG" alt=""></a>
+      <button id="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-section">
+    <div class="page-heading">
+      <p class="page-kicker">Get in touch</p>
+      <h1>Let’s start a conversation.</h1>
+      <p class="page-lede">Have a question about my projects or experience in industrial automation? I’d be glad to hear from you.</p>
+    </div>
+
+    <div class="contact-layout">
+      <aside class="contact-panel">
+        <h2>Contact details</h2>
+        <p>The best way to reach me is by email.</p>
+        <div class="contact-method">
+          <span>Email</span>
+          <a href="mailto:asyraaf3455@gmail.com">asyraaf3455@gmail.com</a>
+        </div>
+        <div class="contact-method">
+          <span>Location</span>
+          <strong>Sungkai, Perak, Malaysia</strong>
+        </div>
+      </aside>
+
+      <section class="contact-panel" aria-labelledby="message-title">
+        <h2 id="message-title">Send a message</h2>
+        <form id="contact-form" class="contact-form" novalidate>
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error">
+          <span class="error" id="name-error"></span>
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error">
+          <span class="error" id="email-error"></span>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" aria-describedby="subject-error">
+          <span class="error" id="subject-error"></span>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" aria-describedby="message-error"></textarea>
+          <span class="error" id="message-error"></span>
+
+          <button type="submit" class="btn">Check message <span aria-hidden="true">→</span></button>
+          <p class="form-note">This demo form checks your message locally but does not send it. Please use the email link to contact me.</p>
+          <p id="success-msg" class="form-success hidden" role="status">Your message passed the checks. Please email it to me directly to send it.</p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Muhamad Asyraaf bin Muhamad Aziril</p>
+    <a href="mailto:asyraaf3455@gmail.com">Email me</a>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

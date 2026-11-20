@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Muhamad Asyraaf's projects in automation, robotics, and IoT monitoring.">
+  <title>Projects | Muhamad Asyraaf</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="Muhamad Asyraaf home"><img src="images/MA.PNG" alt=""></a>
+      <button id="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-section">
+    <div class="page-heading">
+      <p class="page-kicker">Selected work</p>
+      <h1>Projects &amp; hands-on learning.</h1>
+      <p class="page-lede">A selection of projects and practical experience in monitoring, electronics, and industrial automation.</p>
+    </div>
+
+    <div class="filters" aria-label="Filter projects">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">All projects</button>
+      <button class="filter-btn" data-filter="iot" aria-pressed="false">IoT</button>
+      <button class="filter-btn" data-filter="automation" aria-pressed="false">Automation</button>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card" data-category="iot">
+        <div class="project-visual visual-farm" aria-hidden="true"><span>ARDUINO · IOT</span></div>
+        <span class="project-tag">IoT monitoring</span>
+        <h2>Chicken Brooder Feeder Monitoring System</h2>
+        <p>Arduino-based monitoring of feed and water levels with Telegram alerts.</p>
+        <button class="btn btn-small details-btn" data-title="Chicken Brooder Feeder Monitoring System" data-info="An Arduino-based system for monitoring feed and water levels. It sends Telegram alerts when feed is low and logs data to Google Sheets for remote monitoring. Tools: Arduino, Telegram, and Google Sheets.">Project details <span aria-hidden="true">↗</span></button>
+      </article>
+
+      <article class="project-card" data-category="automation">
+        <div class="project-visual visual-factory" aria-hidden="true"><span>OMRON · ROBOTICS</span></div>
+        <span class="project-tag">Industrial automation</span>
+        <h2>Teaching Factory: Production and Robotics</h2>
+        <p>Operating and monitoring a production line with Omron robots.</p>
+        <button class="btn btn-small details-btn" data-title="Teaching Factory: Production and Robotics" data-info="Practical experience operating and monitoring a production line with Omron industrial robots, with a focus on workflow management, machine coordination, and process monitoring.">Project details <span aria-hidden="true">↗</span></button>
+      </article>
+
+      <article class="project-card" data-category="automation">
+        <div class="project-visual visual-display" aria-hidden="true"><span>DIPLOMA · FINAL PROJECT</span></div>
+        <span class="project-tag">Electronics project</span>
+        <h2>Lecturer Attendance Display System</h2>
+        <p>My final-year diploma project at Kolej Vokasional Slim River.</p>
+        <button class="btn btn-small details-btn" data-title="Lecturer Attendance Display System" data-info="A final-year diploma project completed at Kolej Vokasional Slim River. More project details can be added as they become available.">Project details <span aria-hidden="true">↗</span></button>
+      </article>
+    </div>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-info">
+        <button id="close-modal" class="modal-close" aria-label="Close project details">&times;</button>
+        <p class="page-kicker">Project overview</p>
+        <h2 id="modal-title"></h2>
+        <p id="modal-info"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Muhamad Asyraaf bin Muhamad Aziril</p>
+    <a href="mailto:asyraaf3455@gmail.com">Email me</a>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
